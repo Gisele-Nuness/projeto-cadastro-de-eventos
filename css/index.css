@@ -22,6 +22,8 @@ body {
 .cabecalho {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 20px;
     align-items: center;
     background-color: #000000;
 }
@@ -29,6 +31,7 @@ body {
 nav ul {
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
  nav ul li a {
@@ -47,11 +50,10 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-nav ul li a.btn-login {
-    background-color: #2c2c2c;
+.btn-login {
     border-radius: 10px;
     padding: 10px 20px;
-    color: #ffffff;
+    color: #000000;
 }
 
 /* RESPONSIVE */
