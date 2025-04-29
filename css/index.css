@@ -26,6 +26,7 @@ body {
     padding-inline: 20px;
     align-items: center;
     background-color: #000000;
+    
 }
 
 nav ul {
@@ -40,13 +41,12 @@ nav ul {
     transition: .2s;
     display: inline-block;
     margin: 20px;
-    color: #52617D;
+    color: #fff;
     transition: 0.1s ease-in-out;
  }
 
 nav ul li a:hover {
     transform: scale(1.1);
-    color: #fff;
     padding: 10px;
     border-radius: 10px;
 }
@@ -60,6 +60,28 @@ nav ul li a:hover {
 
 .btn-login:hover {
     transform: scale(1.1);
+}
+
+main {
+    background-image: url(../img/bg-home.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+main .desc-home {
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
 }
 
 /* RESPONSIVE */
