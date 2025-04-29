@@ -9,10 +9,7 @@ body {
     font-style: normal;
     margin: 0;
     scroll-behavior: smooth;
-    background: linear-gradient(45deg, #FFFFFF, #c0c0c0);
-    background-attachment: fixed;
-    background-size: 500%;
-    animation: backgroundAnimation 10s infinite ease;
+
 }
 
 .img-logo{
@@ -40,7 +37,7 @@ nav ul {
     transition: .2s;
     display: inline-block;
     margin: 20px;
-    color: #52617D;
+    color: #949494;
     transition: 0.1s ease-in-out;
  }
 
