@@ -9,8 +9,15 @@ body {
     font-style: normal;
     margin: 0;
     scroll-behavior: smooth;
-
+    background-image: url(../img/bg-home.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%; 
 }
+
 
 .img-logo{
     width: 300px;
@@ -22,7 +29,7 @@ body {
     justify-content: space-between;
     padding-inline: 20px;
     align-items: center;
-    background-color: #000000;
+    background-color: #00000089;
     
 }
 
@@ -38,7 +45,7 @@ nav ul {
     transition: .2s;
     display: inline-block;
     margin: 20px;
-    color: #949494;
+    color: #fff;
     transition: 0.1s ease-in-out;
  }
 
@@ -49,24 +56,20 @@ nav ul li a:hover {
 }
 
 .btn-login {
+    background-color: #922bc3;
     border-radius: 10px;
     padding: 10px 20px;
-    color: #000000;
+    color: #fff;
     transition: 0.1s ease-in-out;
 }
 
 .btn-login:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 main {
-    background-image: url(../img/bg-home.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
-    width: 100%; 
     display: flex; 
     align-items: center;
     justify-content: center;
