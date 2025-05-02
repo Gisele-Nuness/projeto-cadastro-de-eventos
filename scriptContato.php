@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Inserir os dados no banco de dados
     try {
         // Comando para inserir os dados na tabela
-        $comando = "INSERT INTO tbContato (nome, cnpj, telefone, email) VALUES (?, ?, ?, ?)";
+        $comando = "INSERT INTO tbcontato (nomeContato, cnpjContato, telefoneContato, emailContato) VALUES (?, ?, ?, ?)";
         $stmt = $con->prepare($comando);
         $stmt->bindParam(1, $nome);
         $stmt->bindParam(2, $cnpj);
