@@ -39,7 +39,7 @@
 </header>
     <div class="container-form" id="contato">
 
-        <form class="formulario">
+        <form class="formulario" action="scriptContato.php" method="POST" enctype="multipart/form-data" onsubmit="return validarFormulario()">
 
             <h1>Fale conosco</h1>
             <p>E fique por dentro de todos os eventos! </p>
@@ -48,7 +48,7 @@
 
             <input class="estilo-input" type="text" name="cnpj" placeholder="CNPJ" required><br>
 
-            <input class="estilo-input" type="text" name="celular" placeholder="Tel: (11) 00000-0000" required><br>
+            <input class="estilo-input" type="text" name="telefone" placeholder="Tel: (11) 00000-0000" required><br>
 
             <input class="estilo-input" type="email" name="email"
                 placeholder="Digite seu email (example@email.com)" required><br>
