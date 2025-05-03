@@ -8,7 +8,7 @@
     justify-content: space-between;
     padding-inline: 10px;
     align-items: center;
-    background-color: #00000089;
+    background-color: #000000bc;
     
 }
 
@@ -35,8 +35,8 @@ nav ul li a:hover {
 }
 
 .btn-login {
-    background-color: #922bc3;
-    border-radius: 10px;
+    background-color: 	#FF1493;
+    border-radius: 6px;
     padding: 10px 20px;
     color: #fff;
     transition: 0.1s ease-in-out;

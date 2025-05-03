@@ -10,53 +10,58 @@
 </head>
 
 <body>
-    <section class="cabecalho">
-        <a href="#" class="logo">
-            <img src="./img/logo-black.PNG" alt="logo-eventeg" class="img-logo">
-            <link rel="stylesheet" href="./css/cabecalho.css">
-        </a>
+    <header>
+        <section class="cabecalho">
+            <a href="#" class="logo">
+                <img src="./img/logo-black.PNG" alt="logo-eventeg" class="img-logo">
+                <link rel="stylesheet" href="./css/cabecalho.css">
+            </a>
+    
+            <nav>
+    
+                <input type="checkbox" id="menu-hamburguer" />
+    
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+    
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><button type="button" class="btn-login">Login</button></li>
+                    
+                </ul>
+            </nav>   
+        </section>
+    
+    </header>
+    
+    <main>
+        <div class="container-form" id="contato">
 
-        <nav>
-
-            <input type="checkbox" id="menu-hamburguer" />
-
-            <label for="menu-hamburguer">
-                <div class="menu">
-                    <span class="hamburguer"></span>
-                </div>
-            </label>
-
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><button type="button" class="btn-login">Login</button></li>
-                
-            </ul>
-        </nav>   
-    </section>
-
-</header>
-    <div class="container-form" id="contato">
-
-        <form class="formulario" action="scriptContato.php" method="POST" enctype="multipart/form-data" onsubmit="return validarFormulario()">
-
-            <h1>Fale conosco</h1>
-            <p>E cadastre seu evento aqui! </p>
-
-            <input class="estilo-input" type="text" name="nome" id="nome" placeholder="Nome" required><br>
-
-            <input class="estilo-input" type="text" name="cnpj" id="cnpj" placeholder="CNPJ" required><br>
-
-            <input class="estilo-input" type="text" name="telefone" id="telefone" placeholder="Tel: (11) 00000-0000" required><br>
-
-            <input class="estilo-input" type="email" name="email" id="email"
-                placeholder="Digite seu email (example@email.com)" required><br>
-
-            <input class="btn-cadastro" type="submit" value="Cadastre-se">
-
-        </form>
-    </div>
+            <form class="formulario" action="scriptContato.php" method="POST" enctype="multipart/form-data" onsubmit="return validarFormulario()">
+    
+                <h1>Fale conosco</h1>
+                <p>E cadastre seu evento aqui! </p>
+    
+                <input class="estilo-input" type="text" name="nome" id="nome" placeholder="Nome" required><br>
+    
+                <input class="estilo-input" type="text" name="cnpj" id="cnpj" placeholder="CNPJ" required><br>
+    
+                <input class="estilo-input" type="text" name="telefone" id="telefone" placeholder="Tel: (11) 00000-0000" required><br>
+    
+                <input class="estilo-input" type="email" name="email" id="email"
+                    placeholder="Digite seu email (example@email.com)" required><br>
+    
+                <input class="btn-cadastro" type="submit" value="Cadastre-se">
+    
+            </form>
+        </div>
+    </main>
+    
         
     <footer class="rodape">
         <p>© 2025 EVENTEG. Todos os direitos reservados.</p>
