@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EVENTEG</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-form" id="login">
+            <form class="formulario" action="scriptLogin.php" method="POST" onsubmit="return validarLogin()">
+                <h1>Login</h1>
+                <p>Entre para gerenciar seus eventos</p>
+
+                <input class="estilo-input" type="email" name="email" id="loginEmail" placeholder="Email" required><br>
+                <input class="estilo-input" type="password" name="senha" id="loginSenha" placeholder="Senha" required><br>
+
+                <input class="btn-logar" type="submit" value="Logar">
+            </form>
+        </div>
+    </main>
+
+<script src="validacao.js"></script>
+</body>
+</html>

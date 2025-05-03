@@ -45,3 +45,20 @@ function validarFormulario() {
 
     return true; // Envia o formulário se tudo estiver OK
 }
+
+function validarLogin() {
+    const email = document.getElementById("loginEmail").value.trim();
+    const senha = document.getElementById("loginSenha").value.trim();
+
+    if (email === "") {
+        alert("O campo Email é obrigatório.");
+        return false;
+    }
+
+    if (senha === "") {
+        alert("O campo Senha é obrigatório.");
+        return false;
+    }
+
+    return true;
+}

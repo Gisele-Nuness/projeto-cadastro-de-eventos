@@ -4,7 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-image: url(../img/circo.png);
+    background-image: url(../img/bg-contato.png);
 }
 
 main {
@@ -12,7 +12,21 @@ main {
     display: flex; 
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
 
 .container-form {
     position: relative;
@@ -21,7 +35,8 @@ main {
     align-items: center;
     text-align: center;
     height: 600px;
-    z-index: 2;  
+    z-index: 2;
+   
 }
 
 .formulario {
@@ -59,7 +74,7 @@ main {
 
 }
 
-.btn-cadastro {
+.btn-logar {
     background-color: 	#FF1493;
     color: #fff;
     font-size: 18px;
