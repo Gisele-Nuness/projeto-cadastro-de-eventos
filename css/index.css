@@ -36,4 +36,30 @@ main .desc-home {
     max-width: 700px;
 }
 
-/* RESPONSIVE */
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    padding-inline: 10px;
+    background-color: #00000089;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    padding-inline: 10px;
+    background-color: #00000089;
+}
+
+.rodape p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+}
+
