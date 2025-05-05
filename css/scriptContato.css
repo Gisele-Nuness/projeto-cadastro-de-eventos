@@ -1,28 +1,37 @@
 /* Estilo geral para o corpo */
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     text-align: center;
-    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg-contato.png);
+    height: 100vh;
+   
 }
 
 /* Estilo do título */
 h1 {
-    color: #4CAF50;
+    color: #FF1493;
     font-size: 32px;
     margin-bottom: 20px;
 }
 
 /* Estilo da caixa de mensagem */
 .message {
-    background-color: #e7f7e7;
-    border: 1px solid #4CAF50;
+    display: flex;
+    flex-direction: column;
+    background-color: #e7f7e7a9;
+    border: 2px solid #FF1493;
     padding: 20px;
-    margin: 30px auto;
     border-radius: 5px;
     font-size: 20px;
     max-width: 500px; /* Limita a largura da caixa */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilo do contador de redirecionamento */
@@ -34,7 +43,7 @@ h1 {
 
 /* Estilo do botão de redirecionamento */
 button {
-    background-color: #4CAF50;
+    background-color: #FF1493;
     color: white;
     padding: 10px 20px;
     border: none;

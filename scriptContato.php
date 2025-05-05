@@ -32,6 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <meta name='viewport' content='width=device-width, initial-scale=1.0'>
             <title>Contato Enviado</title>
             <link rel='stylesheet' type='text/css' href='./css/scriptContato.css'>
+            <link rel='stylesheet' type='text/css' href='./css/reset.css'>
         </head>
         <body>
             <div class='message'>
@@ -40,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <p class='timer' id='countdown'>3</p>
             </div>
             <script>
-                let countdown = 3;
+                let countdown = 10;
                 let timer = setInterval(function() {
                     countdown--;
                     document.getElementById('countdown').textContent = countdown;
