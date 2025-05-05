@@ -9,6 +9,14 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+    background-color: #5b1784 !important;
+}
+
+img{
+    width: 200px !important;
+    height: 150px !important;
+    align-self: center !important;
+    margin-top: 5px !important;
 }
 
 .container {
