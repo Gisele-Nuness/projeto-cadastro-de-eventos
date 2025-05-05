@@ -4,30 +4,33 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-style: normal;
-    scroll-behavior: smooth;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
     width: 100%; 
     color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-colors {
-    background-color: #FFB6C1;
+    background-color: #FF1493;
     padding: 5px;
     padding-inline: 15px;
     border-radius: 8px;
-    border-color: #FFB6C1;
+    border-color: 	#FF1493;
     color: #000000;
 }
 
@@ -40,3 +43,22 @@ body {
     font-size: 20px;
     margin-top: 10px;
 }
+
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    padding-inline: 10px;
+    background-color: #000000bc;
+}
+
+.rodape p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+}
+
