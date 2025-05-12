@@ -2,7 +2,7 @@
     width: 150px;
     
 }
-.cabecalho {
+header .cabecalho {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,54 +12,54 @@
     
 }
 
-nav ul {
+header .cabecalho nav ul {
     display: flex;
     align-items: center;
-    padding: 10px;
-    font-size: 18px;
+    padding: 10px !important;
+    font-size: 18px !important;
 }
 
- nav ul li a {
-    padding: 11px 6px;
+header .cabecalho nav ul li a {
+    padding: 11px 6px !important;
     transition: .2s;
     display: inline-block;
-    margin: 20px;
+    margin: 20px !important;
     color: #fff;
     transition: 0.1s ease-in-out;
  }
 
-nav ul li a:hover {
+header .cabecalho nav ul li a:hover {
     transform: scale(1.1);
-    padding: 10px;
-    border-radius: 10px;
+    padding: 10px !important;
+    border-radius: 10px !important;
 }
 
-.btn-login {
+header .cabecalho .btn-login {
     background-color: 	#FF1493;
     border-radius: 6px;
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     color: #fff;
     transition: 0.1s ease-in-out;
 }
 
-.btn-login:hover {
+header .cabecalho .btn-login:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.menu {
+header .cabecalho .menu {
     display: none;
     width: 60px;
     height: 60px;
     align-self: flex-end;
 }
 
-nav label {
+header .cabecalho nav label {
     display: flex;
     flex-direction: column;
 }
 
-.hamburguer {
+header .cabecalho .hamburguer {
     background-color: #fff;
     position: relative;
     display: block;
