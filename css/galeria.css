@@ -12,11 +12,11 @@ body {
     background-color: #5b1784 !important;
 }
 
-img{
-    width: 200px !important;
-    height: 150px !important;
-    align-self: center !important;
-    margin-top: 5px !important;
+.imagem{
+    width: 200px;
+    height: 150px;
+    align-self: center;
+    margin-top: 5px;
 }
 
 .container {
