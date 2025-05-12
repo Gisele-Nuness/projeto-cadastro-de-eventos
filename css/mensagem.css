@@ -1,0 +1,19 @@
+/* estilo.css */
+
+/* Estilo da mensagem de sucesso ou erro */
+.mensagem {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #28a745; /* verde para sucesso */
+    padding: 15px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.mensagem.erro {
+    background-color: #dc3545; /* vermelho para erro */
+}
