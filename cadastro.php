@@ -23,6 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($s->execute()) {
                 $mensagem = "Cadastro realizado com sucesso!";
+                    // redirecionar depois
+                $redirect = "login.php";
             } else {
                 $mensagem = "Erro ao cadastrar: " . $s->errorInfo()[2];
             }

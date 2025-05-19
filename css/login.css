@@ -97,10 +97,17 @@ main::before {
     margin-top: 10px;
 }
 
+
 .btn-logar:hover {
     transform: scale(1.1);
     background-color: #000000;
     color: #ffffff;
+}
+
+.clique {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .rodape {
