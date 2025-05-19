@@ -8,7 +8,7 @@ if (!isset($_SESSION['usuario'])) {
 // Mensagem de boas-vindas para demonstração e redirecionamento
 $mensagem = "Bem-vindo, " . htmlspecialchars($_SESSION['usuario']) . "! Você será redirecionado para a página principal...";
 $classe = "mensagem";
-$redirect = "dashboard.php"; // Ou outra página que queira
+$redirect = "dashboard.html"; // Ou outra página que queira
 
 ?>
 

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-image: url(../img/circo.png);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+body.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    z-index: 2;  
+}
+
+.formulario {
+    background: #00000080;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    color: #333;
+    gap: 20px;
+    
+}
+
+h1 {
+    font-size: 25px;
+    color: #fff;
+}
+
+button {
+    width: 350px;
+    height: 45px;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+button.sair {
+    background-color: rgba(255, 0, 0, 0.664);
+}
+
+a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
