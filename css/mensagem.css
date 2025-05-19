@@ -1,19 +1,39 @@
-/* estilo.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-image: url(../img/bg-home.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%; 
+    color: #fff;
+}
+
+body.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* Estilo da mensagem de sucesso ou erro */
 .mensagem {
-    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
     font-size: 18px;
     color: #ffffff;
-    background-color: #28a745; /* verde para sucesso */
+    background-color: #FF1493; /* rosa para sucesso */
     padding: 15px;
-    margin: 20px auto;
     width: fit-content;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     text-align: center;
 }
 
 .mensagem.erro {
-    background-color: #dc3545; /* vermelho para erro */
+    background-color: #c40014; /* vermelho para erro */
 }
