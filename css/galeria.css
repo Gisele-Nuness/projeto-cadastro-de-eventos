@@ -74,6 +74,10 @@ main {
     margin-top: 10px;
 }
 
+.modal-title {
+    color: black;
+}
+
 
 .rodape {
     display: flex;

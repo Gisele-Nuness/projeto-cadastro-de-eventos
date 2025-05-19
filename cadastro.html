@@ -30,11 +30,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./galeria.html">Galeria</a></li>
                 <li><a href="./contato.html">Contato</a></li>
-<<<<<<< HEAD:cadastro.html
-                <li><a href="./cadastro.html"><button type="button" class="btn-login">Cadastre-se</button></a></li>
-=======
                 <li><a href="./login.html"><button type="button" class="btn-login">Login</button></a></li>
->>>>>>> 8bcb44b9f0b7e8f899ba78f982767ff8593573b2:login.html
                 
             </ul>
         </nav>   
@@ -43,27 +39,20 @@
 
 <body>
     <main>
-        <div class="container-form" id="login">
-            <form class="formulario" action="login.php" method="POST" onsubmit="return validarLogin()">
-                <h1>Login</h1>
-                <p>Entre para gerenciar seus eventos</p>
+        <div class="container-form" id="cadastro">
+            <form class="formulario" action="cadastro.php" method="POST" onsubmit="return validarLogin()">
+                <h1>Cadastro</h1>
+                <p>Faça seu cadastro!</p>
 
                 <input class="estilo-input" type="email" name="email" id="loginEmail" placeholder="Email" required><br>
                 <input class="estilo-input" type="password" name="senha" id="loginSenha" placeholder="Senha" required><br>
 
-                <input href="painel.html" class="btn-logar" type="submit" value="Logar">
-                <a href="cadastro.html" class="clique">Não tem cadastro? Clique aqui!</a>
+                <input class="btn-logar" type="submit" value="Cadastrar">
             </form>
         </div>
     </main>
 
 <script src="validacao.js"></script>
 <script src="transicao.js"></script>
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.get('erro') === '1') {
-    alert("Usuário ou senha incorretos!");
-  }
-</script>
 </body>
 </html>
