@@ -82,6 +82,8 @@ main::before {
 .texto-modal {
     font-size: 20px;
     margin-top: 10px;
+    color: black;
+
 }
 
 .modal-title {

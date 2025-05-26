@@ -16,9 +16,12 @@ body.fade-in {
 }
 
 main {
+    height: 100vh;
     display: flex; 
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .container-form {
@@ -91,7 +94,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 80px;
+    height: 100px;
     padding-inline: 10px;
     background-color: #000000bc;
 }
