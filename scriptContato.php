@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <p class='timer' id='countdown'>3</p>
             </div>
             <script>
-                let countdown = 10;
+                let countdown = 3;
                 let timer = setInterval(function() {
                     countdown--;
                     document.getElementById('countdown').textContent = countdown;

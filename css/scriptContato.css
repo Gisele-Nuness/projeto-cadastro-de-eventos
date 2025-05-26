@@ -1,4 +1,4 @@
-/* Estilo geral para o corpo */
+
 body {
     display: flex;
     flex-direction: column;
@@ -12,7 +12,6 @@ body {
    
 }
 
-/* Estilo do título */
 h1 {
     color: #FF1493;
     font-size: 32px;
@@ -23,7 +22,7 @@ h1 {
 .message {
     display: flex;
     flex-direction: column;
-    background-color: #e7f7e7a9;
+    background-color: #fff;
     border: 2px solid #FF1493;
     padding: 20px;
     border-radius: 5px;

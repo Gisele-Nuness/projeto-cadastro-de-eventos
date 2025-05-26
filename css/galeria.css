@@ -44,10 +44,10 @@ main::before {
 }
 
 .imagem{
-    width: 200px;
+    width: 100%;
     height: 150px;
     align-self: center;
-    margin-top: 5px;
+    
 }
 
 .container {
@@ -103,7 +103,7 @@ main::before {
 
 .rodape p {
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
     margin: 0;
 }
