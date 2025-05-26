@@ -26,7 +26,7 @@ body.fade-in {
 }
 
 .formulario {
-    background: #00000080;
+    background: #ff149132;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -44,16 +44,35 @@ h1 {
     color: #fff;
 }
 
+.icon {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 300px;
+}
+
+button.sair .icon {
+    right: 160px !important; 
+}
+
 button {
     width: 350px;
     height: 45px;
-    background-color: blue;
-    border-radius: 10px;
+   background: linear-gradient(to right, #F13FA5, #e97aae);
+    border-color: #F13FA5;
+    border-radius: 20px;
     padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 button.sair {
-    background-color: rgba(255, 0, 0, 0.664);
+    background: linear-gradient(to right, #E70E2F, #EC1A8B);
+    width: 200px;
+    
 }
 
 a {
