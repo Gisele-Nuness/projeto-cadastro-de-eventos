@@ -17,7 +17,7 @@ if (!isset($_SESSION['usuario'])) {
     <main>
         <div class="container-form" id="cadastro-evento">
             <form class="formulario" action="processa-evento.php" method="POST" enctype="multipart/form-data"> 
-                <h1>Cadastrar Novo Evento</h1>
+                <h1>Cadastrar Evento</h1>
 
                 <div class="form-group">
                     <label for="titulo">Título:</label>

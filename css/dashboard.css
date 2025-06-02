@@ -4,10 +4,11 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-image: url(../img/circo.png);
+    background-image: url(../img/circo-alegre.png);
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 1.5s ease, transform 1.5s ease;
+    overflow: hidden;
 }
 
 body.fade-in {
@@ -26,7 +27,7 @@ body.fade-in {
 }
 
 .formulario {
-    background: #ff149132;
+    background: #32132376;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
