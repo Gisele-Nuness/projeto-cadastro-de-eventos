@@ -28,8 +28,8 @@ body.fade-in {
 
 .formulario {
     background: #29102599;
-    border: 2px solid #FF6EC7;
-    box-shadow: 0 0 5px #FF6EC7, 0 0 10px #FF6EC7, 0 0 20px #FF6EC7;
+    border: 2px solid #A020F0;
+    box-shadow: 0 0 5px #A020F0, 0 0 10px #A020F0, 0 0 20px #A020F0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -62,8 +62,8 @@ button {
     width: 300px;
     height: 45px;
     background-color: #33333320;
-    border: 2px solid #FF6EC7;
-    box-shadow: 0 0 5px #FF6EC7, 0 0 10px #FF6EC7, 0 0 20px #FF6EC7;
+    border: 2px solid #A020F0;
+    box-shadow: 0 0 5px #A020F0, 0 0 10px #A020F0, 0 0 20px #A020F0;
     border-radius: 5px;
     padding: 5px;
     display: flex;
@@ -74,7 +74,7 @@ button {
 }
 
 button.sair {
-    background: linear-gradient(to right, #EC1A8B, #e163a4 );
+    background: #A020F0;
     width: 200px;
     
 }
