@@ -20,21 +20,25 @@ if (!isset($_SESSION['usuario'])) {
                 <h1>Cadastrar Evento</h1>
 
                 <div class="form-group">
+                    <img src="./img/titulo.png" alt="" class="img">
                     <label for="titulo">Título:</label>
                     <input type="text" name="titulo" required>
                 </div>
 
                 <div class="form-group">
+                    <img src="./img/data.png" alt="" class="img">
                     <label for="data_evento">Data do Evento:</label>
                     <input type="date" name="data_evento" required>
                 </div>
 
                 <div class="form-group">
+                    <img src="./img/descricao.png" alt="" class="img">
                     <label for="descricao">Descrição:</label>
                     <textarea name="descricao" rows="4" required></textarea>
                 </div>
 
                 <div class="form-group">
+                    <img src="./img/imagem.png" alt="" class="img">
                     <label for="imagem">Imagem:</label>
                     <input type="file" name="imagem" accept="image/*" required>
                 </div>
