@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -53,7 +53,7 @@ main .desc-home h1 {
     letter-spacing: 1px;
     color: #fff;
     text-align: left;
-    font-family: "Passion One", sans-serif;
+    font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
