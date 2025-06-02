@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -14,6 +15,7 @@ body {
     width: 100%; 
     color: #fff;
 }
+
 
 main {
     height: 100vh;
@@ -46,12 +48,14 @@ main .desc-home {
 }
 
 main .desc-home h1 {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #fff;
     text-align: left;
+    font-family: "Passion One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 main .desc-home p {
@@ -65,7 +69,7 @@ main .desc-home p {
     line-height: 1.6;
 }
 .carousel{
-    width: 50%;
+    width: 40%;
 }
 
 .rodape {
@@ -85,3 +89,18 @@ main .desc-home p {
     margin: 0;
 }
 
+.neon-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #fa6603, 0 0 20px #fa6603, 0 0 40px #fa6603, 0 0 80px #fa6603, 0 0 160px #fa6603  ;
+    }
+}
