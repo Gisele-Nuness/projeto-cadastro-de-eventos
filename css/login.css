@@ -4,7 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-image: url(../img/bg-contato.png);
+    background-image: url(../img/festa-laranja.png);
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 1.5s ease, transform 1.5 ease;
