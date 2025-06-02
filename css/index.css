@@ -18,10 +18,12 @@ body {
 main {
     height: 100vh;
     display: flex; 
+    flex-direction:row;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+    gap: 10px;
 }
 
 main::before {
@@ -49,17 +51,21 @@ main .desc-home h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 main .desc-home p {
     font-size: 22px;
     font-weight: 400;
     color: #e0e0e0;
-    text-align: center;
+    text-align: left;
     max-width: 700px;
+    margin-top: 10px;
     margin: 0 auto 30px;
     line-height: 1.6;
+}
+.carousel{
+    width: 50%;
 }
 
 .rodape {
