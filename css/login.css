@@ -49,9 +49,9 @@ main::before {
 }
 
 .formulario {
-    background: #29102599;
-    border: 2px solid #FF6EC7;
-    box-shadow: 0 0 5px #FF6EC7, 0 0 10px #FF6EC7, 0 0 20px #FF6EC7;
+    background: #29231099;
+    border: 2px solid #FF8800;
+    box-shadow: 0 0 5px #FF8800, 0 0 10px #FF8800, 0 0 20px #FF8800;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -59,6 +59,7 @@ main::before {
     align-items: center;
     color: #333;
     padding: 25px;
+    padding-inline: 50px;
     margin: 20px;
 }
 
@@ -77,16 +78,28 @@ main::before {
 .estilo-input {
     margin-top: 15px;
     gap: 50px;
-    width: 300px;
+    width: 280px;
     height: 40px;
     border-radius: 3px;
     padding: 5px;
-    border: 1px solid #ffffff;
+    border: 2px solid #FF8800;
+    box-shadow: 0 0 5px #FF8800, 0 0 10px #FF8800, 0 0 20px #FF8800;
+}
 
+.login {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 30px;
 }
 
 .btn-logar {
-    background-color: 	#FF1493;
+    background-color: 	#FF8800;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
@@ -96,7 +109,7 @@ main::before {
     border: none;
     cursor: pointer;
     transition: 0.5s;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 
