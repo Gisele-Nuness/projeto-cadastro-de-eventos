@@ -39,7 +39,9 @@ main::before {
 }
 
 .formulario {
-    background: #f92dda3a;
+    background: #29102599;
+    border: 2px solid #FF6EC7;
+    box-shadow: 0 0 5px #FF6EC7, 0 0 10px #FF6EC7, 0 0 20px #FF6EC7;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -48,7 +50,6 @@ main::before {
     color: #333;
     padding: 35px;
     padding-inline: 80px;
-
     margin: 20px;
 }
 
@@ -83,6 +84,13 @@ main::before {
 
 .form-group textarea {
     resize: vertical;
+}
+
+.img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 400px;
 }
 
 .btn {

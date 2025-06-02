@@ -47,6 +47,8 @@ main::before {
 
 .formulario {
     background: #00000080;
+    border: 2px solid #FF6EC7;
+    box-shadow: 0 0 5px #FF6EC7, 0 0 10px #FF6EC7, 0 0 20px #FF6EC7;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
