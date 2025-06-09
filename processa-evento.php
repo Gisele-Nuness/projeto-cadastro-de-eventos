@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Conectar ao banco de dados
 include 'conexao.php';
 
@@ -6,6 +7,7 @@ include 'conexao.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['imagem']) && $_FILES['imagem']['error'] == 0) {
 
     // Obtendo os dados do formulário
+    $idUsuario = $_SESSION['idUsuario'];
     $titulo = $_POST['titulo'];
     $data = $_POST['data_evento'];
     $descricao = $_POST['descricao'];
@@ -53,12 +55,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['imagem']) && $_FILES[
         // Inserir os dados no banco de dados
         try {
             // Comando para inserir os dados na tabela
-            $comando = "INSERT INTO tbeventos (titulo, data_evento, descricao, imagem) VALUES (?, ?, ?, ?)";
+            $comando = "INSERT INTO tbeventos (titulo, data_evento, descricao, imagem, idUsuario) VALUES (?, ?, ?, ?, ?)";
             $stmt = $con->prepare($comando);
             $stmt->bindParam(1, $titulo);
             $stmt->bindParam(2, $data);
             $stmt->bindParam(3, $descricao);
             $stmt->bindParam(4, $novo_nome_foto);// Salvando o nome da foto no banco
+            $stmt->bindParam(5, $idUsuario);
     
 
             // Executando o comando
