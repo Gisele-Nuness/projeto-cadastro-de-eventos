@@ -1,0 +1,47 @@
+/* css/excluir.css */
+
+/* Define o estilo base do corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Fonte principal */
+  background-color: #f9f9f9;       /* Cor de fundo clara */
+  margin: 0;                      /* Remove margens padrão */
+  padding: 40px;                  /* Espaçamento interno */
+  display: flex;                  /* Usa flexbox para alinhamento */
+  justify-content: center;        /* Centraliza horizontalmente */
+  align-items: center;            /* Centraliza verticalmente */
+  height: 100vh;                  /* Altura total da janela de visualização */
+}
+
+/* Container central que segura a mensagem */
+.container {
+  background-color: #fff;         /* Fundo branco */
+  border: 1px solid #ddd;         /* Borda cinza clara */
+  border-radius: 10px;            /* Cantos arredondados */
+  padding: 30px 40px;             /* Espaçamento interno vertical e horizontal */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave para destaque */
+  text-align: center;             /* Centraliza o texto */
+  max-width: 500px;               /* Largura máxima fixa */
+  width: 100%;                   /* Largura responsiva */
+}
+
+/* Estilo padrão para mensagens */
+.mensagem {
+  font-size: 1.2rem;              /* Tamanho da fonte um pouco maior */
+}
+
+/* Estilo específico para mensagens de sucesso */
+.mensagem.sucesso {
+  color: #007bff;                 /* Cor azul (ex: confirmação) */
+}
+
+/* Estilo específico para mensagens de erro */
+.mensagem.erro {
+  color: #dc3545;                 /* Cor vermelha (ex: erro ou alerta) */
+}
+
+/* Parágrafo dentro da mensagem com estilo secundário */
+.mensagem p {
+  margin-top: 15px;               /* Espaço acima do parágrafo */
+  font-size: 0.9rem;              /* Fonte menor para texto secundário */
+  color: #666;                   /* Cor cinza para o texto secundário */
+}

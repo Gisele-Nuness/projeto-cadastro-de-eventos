@@ -44,7 +44,12 @@ $eventos = $stmt->fetchAll(PDO::FETCH_ASSOC);
               <p><strong>Data:</strong> <?= $evento['data_evento'] ?></p> <!-- Data do evento -->
               <p><?= htmlspecialchars($evento['descricao']) ?></p> <!-- Descrição do evento -->
               <!-- Link para editar o evento passando o id como parâmetro -->
-              <a href="atualizar_evento.php?id=<?= $evento['idEvento'] ?>" class="btn-edit">Editar</a>
+              <div class="botoes">
+                 <a href="atualizar_evento.php?id=<?= $evento['idEvento'] ?>" class="btn-edit">Editar</a>
+                 <a href="excluir_evento.php?id=<?= $evento['idEvento'] ?>" class="btn-edit btn-excluir">Excluir</a>
+
+              </div>
+
             </div>
           </div>
         <?php endforeach; ?> <!-- Fim do loop -->

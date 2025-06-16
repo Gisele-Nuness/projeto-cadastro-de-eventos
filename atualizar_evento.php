@@ -8,19 +8,21 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 
-// Verifica se o ID do evento foi passado via GET
-if (!isset($_GET['idEvento'])) {
-    echo "ID do evento não fornecido."; // Mensagem de erro se não houver ID
-    exit;
-}
-
-$id = $_GET['idEvento']; // Armazena o ID do evento
+$id = $_GET['id']; // Armazena o ID do evento
 $usuario = $_SESSION['usuario']; // Armazena o usuário logado
 
 $mensagem_sucesso = ''; // Variável para guardar mensagem de sucesso
 
+// Verifica se o ID do evento foi passado via GET
+if (!isset($_GET['id'])) {
+    echo "ID do evento não fornecido."; // Mensagem de erro se não houver ID
+    exit;
+}
+
 // Busca o evento no banco para o usuário logado, com o ID informado
-$stmt = $con->prepare("SELECT * FROM tbusuario WHERE idUsuario = ? AND emailUsuario = ?");
+$stmt = $con->prepare("SELECT * FROM tbeventos e 
+    INNER JOIN tbusuario u ON e.idUsuario = u.idUsuario 
+    WHERE e.idEvento = ? AND u.emailUsuario = ?");
 $stmt->execute([$id, $usuario]);
 $evento = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -70,17 +72,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Atualiza os dados do evento no banco
-    $stmt = $con->prepare("UPDATE tbeventos SET titulo = ?, data_evento = ?, descricao = ?, imagem = ? WHERE idUsuario = ? AND emailUsuario = ?");
-    $stmt->execute([$titulo, $data_evento, $descricao, $imagem_final, $id, $usuario]);
+$stmt = $con->prepare("UPDATE tbeventos SET titulo = ?, data_evento = ?, descricao = ?, imagem = ? 
+    WHERE idEvento = ? AND idUsuario = (
+        SELECT idUsuario FROM tbusuario WHERE emailUsuario = ?
+    )");
+$stmt->execute([$titulo, $data_evento, $descricao, $imagem_final, $id, $usuario]);
 
     $mensagem_sucesso = "Evento atualizado com sucesso!"; // Mensagem para o usuário
 
     // Atualiza a variável $evento para exibir as alterações no formulário
-    $stmt = $con->prepare("SELECT * FROM tbeventos WHERE idUsuario = ? AND emailUsuario = ?");
-
-    //executa a o comando no banco vindo com ID e nome do usuario//
-    $stmt->execute([$id, $usuario]);
-    $evento = $stmt->fetch(PDO::FETCH_ASSOC);
+$stmt = $con->prepare("SELECT * FROM tbeventos e 
+    INNER JOIN tbusuario u ON e.idUsuario = u.idUsuario 
+    WHERE e.idEvento = ? AND u.emailUsuario = ?");
+$stmt->execute([$id, $usuario]);
+$evento = $stmt->fetch(PDO::FETCH_ASSOC);
 }
 ?>
 
