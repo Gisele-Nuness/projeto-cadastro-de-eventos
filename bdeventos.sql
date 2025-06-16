@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09/06/2025 às 21:18
+-- Tempo de geração: 16/06/2025 às 20:18
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -92,17 +92,23 @@ CREATE TABLE `tbeventos` (
   `titulo` varchar(60) NOT NULL,
   `data_evento` date NOT NULL,
   `descricao` varchar(255) NOT NULL,
-  `imagem` varchar(255) NOT NULL
+  `imagem` varchar(255) NOT NULL,
+  `idUsuario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `tbeventos`
 --
 
-INSERT INTO `tbeventos` (`idEvento`, `titulo`, `data_evento`, `descricao`, `imagem`) VALUES
-(1, 'Virada cultural', '2025-05-27', 'show do Periclão', 'imagem3.png'),
-(2, 'Show da Luisa', '2025-06-07', 'Campos de Morango', 'imagem1.jpg'),
-(3, 'Show do João Gomes', '2025-06-08', 'Na praça de eventos em Guaianases', 'imagem2.jpg');
+INSERT INTO `tbeventos` (`idEvento`, `titulo`, `data_evento`, `descricao`, `imagem`, `idUsuario`) VALUES
+(1, 'Virada cultural', '2025-05-27', 'show do Periclão', 'imagem3.png', 1),
+(2, 'Show da Luisa', '2025-06-07', 'Campos de Morango', 'imagem1.jpg', 2),
+(3, 'Show do João Gomes', '2025-06-08', 'Na praça de eventos em Guaianases', 'imagem2.jpg', 3),
+(4, 'Show Luiza Sonza', '2025-06-14', 'Show da braba!!', 'imagem3.jpg', 4),
+(5, 'Luisa', '2025-06-13', 'Shooow!!', 'imagem4.jpg', 5),
+(16, 'Luiza Sonza', '2025-06-21', 'Show da Luiza em Guaianazes.', 'imagem5.jpg', 13),
+(17, 'Show do Péricles', '2025-06-15', 'Show do Periclão.', 'imagem2.jpeg', 17),
+(20, 'teste', '2025-06-20', 'teste', 'imagem13.png', 13);
 
 -- --------------------------------------------------------
 
@@ -133,7 +139,8 @@ INSERT INTO `tbusuario` (`idUsuario`, `emailUsuario`, `senhaUsuario`) VALUES
 (11, 'carlao@hotmail.com', '$2y$10$4gfqa9kNcX9D2Oz9t8yykOC4JAw3nvNofUG5azbiP1Ait5tkQuVtW'),
 (12, 'clodo@hotmail.com', '$2y$10$7pKfiAuyEwGjSrUkYuG1QuE4rLbuMsLsh/vMN5vEgNZ5IBIcBwwcO'),
 (13, 'gi@hotmail.com', '$2y$10$Cew9VLmmQ7mik4Xs7pLir.saqZc2XYAjBhoRw01VtsM1HxR.ShmAu'),
-(16, 'gabriel@gmail.com', '$2y$10$y8Xp1AbwOie6cIH0BNRGkelsz6nsT952QR0fFFD7NGXIJMAZCDiG.');
+(16, 'gabriel@gmail.com', '$2y$10$y8Xp1AbwOie6cIH0BNRGkelsz6nsT952QR0fFFD7NGXIJMAZCDiG.'),
+(17, 'jonathan@gmail.com', '$2y$10$84NC4tN4S.3Mpn0NzqSAT.LEpQKPwt/KclK7kKduoKDo3X13nmH6O');
 
 --
 -- Índices para tabelas despejadas
@@ -149,14 +156,16 @@ ALTER TABLE `tbcontato`
 -- Índices de tabela `tbeventos`
 --
 ALTER TABLE `tbeventos`
-  ADD PRIMARY KEY (`idEvento`);
+  ADD PRIMARY KEY (`idEvento`),
+  ADD KEY `fk_idUsuario` (`idUsuario`);
 
 --
 -- Índices de tabela `tbusuario`
 --
 ALTER TABLE `tbusuario`
   ADD PRIMARY KEY (`idUsuario`),
-  ADD UNIQUE KEY `emailUsuario` (`emailUsuario`);
+  ADD UNIQUE KEY `emailUsuario` (`emailUsuario`),
+  ADD KEY `emailUsuario_2` (`emailUsuario`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
@@ -172,13 +181,23 @@ ALTER TABLE `tbcontato`
 -- AUTO_INCREMENT de tabela `tbeventos`
 --
 ALTER TABLE `tbeventos`
-  MODIFY `idEvento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idEvento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de tabela `tbusuario`
 --
 ALTER TABLE `tbusuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- Restrições para tabelas despejadas
+--
+
+--
+-- Restrições para tabelas `tbeventos`
+--
+ALTER TABLE `tbeventos`
+  ADD CONSTRAINT `fk_idUsuario` FOREIGN KEY (`idUsuario`) REFERENCES `tbusuario` (`idUsuario`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
