@@ -41,7 +41,7 @@ $eventos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <img src="uploads/<?= htmlspecialchars($evento['imagem']) ?>" alt="Imagem do Evento" class="card-img">
             <div class="card-content"> <!-- Conteúdo do card -->
               <h3><?= htmlspecialchars($evento['titulo']) ?></h3> <!-- Título do evento -->
-              <p><strong>Data:</strong> <?= $evento['data_evento'] ?></p> <!-- Data do evento -->
+              <p><strong>Data:</strong> <?= date('d/m/Y', strtotime($evento['data_evento'])) ?></p> <!-- Data do evento formatada -->
               <p><?= htmlspecialchars($evento['descricao']) ?></p> <!-- Descrição do evento -->
               <!-- Link para editar o evento passando o id como parâmetro -->
               <div class="botoes">
