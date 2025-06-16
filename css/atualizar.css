@@ -1,29 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  scroll-behavior: smooth;
+  background-image: url(../img/bg-estrela.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
 
 .container {
   max-width: 600px;
-  background-color: #ffffff;
   margin: 50px auto;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #0000004b;
+  border-radius: 8px;
+  border: 2px solid #A020F0;
+  box-shadow: 0 0 5px #cc8af5, 0 0 10px #cc8af5, 0 0 20px #cc8af5;
+  width: calc((100% / 5) - 16px); /* 5 cards por linha com gap */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s ease;
 }
 
 h2 {
   text-align: center;
-  color: #333333;
+  margin-bottom: 30px;
+  color: #f3e0ff;
+  text-shadow:
+    0 0 5px #A020F0,
+    0 0 10px #A020F0,
+    0 0 20px #A020F0,
+    0 0 40px #A020F0;
+  font-weight: bold;
 }
 
 label {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 15px;
   margin-bottom: 5px;
-  font-weight: bold;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 input[type="text"],
@@ -42,10 +67,20 @@ textarea {
   resize: vertical;
 }
 
-img {
-  display: block;
+.imagem {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
   margin-top: 10px;
   border-radius: 4px;
+}
+
+
+.button{
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
 }
 
 .btn-salvar {
@@ -64,7 +99,7 @@ img {
   background-color: #5b0f8a;
 }
 
-btn-voltar {
+.btn-voltar {
   background-color: #A020F0;
   color: #ffffff;
   border: none;
@@ -81,11 +116,12 @@ btn-voltar {
 }
 
 .mensagem-sucesso {
-  background-color: #d4edda;
-  color: #0056b3;
+  background-color: #5b0f8a;
+  color: #ffff;
+  font-weight: 300;
   padding: 15px;
   margin-bottom: 20px;
-  border: 1px solid #c3e6cb;
+  border: 2px solid #370158;
   border-radius: 4px;
   text-align: center;
 }

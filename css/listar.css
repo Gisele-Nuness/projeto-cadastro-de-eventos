@@ -1,11 +1,18 @@
 /* evento.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffdef0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  scroll-behavior: smooth;
+  background-color: rgb(253, 223, 240);
   margin: 0;
   padding: 20px;
   
+
 }
 
 .container {
