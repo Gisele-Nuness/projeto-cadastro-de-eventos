@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +19,15 @@
 
                 <div class="login">
                     <img src="./img/nome.png" alt="" class="img">
-                    <input class="estilo-input" type="email" name="email" id="loginEmail" placeholder="Email" required><br>
+                    <input class="estilo-input" type="email" name="email" id="loginEmail" placeholder="Email"
+                        required><br>
                 </div>
 
 
                 <div class="login">
                     <img src="./img/senha.png" alt="" class="img">
-                     <input class="estilo-input" type="password" name="senha" id="loginSenha" placeholder="Senha" required><br>
+                    <input class="estilo-input" type="password" name="senha" id="loginSenha" placeholder="Senha"
+                        required><br>
                 </div>
 
 
@@ -34,13 +37,14 @@
         </div>
     </main>
 
-<script src="validacao.js"></script>
-<script src="transicao.js"></script>
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.get('erro') === '1') {
-    alert("Usuário ou senha incorretos!");
-  }
-</script>
+    <script src="./js/validacao.js"></script>
+    <script src="./js/transicao.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('erro') === '1') {
+            alert("Usuário ou senha incorretos!");
+        }
+    </script>
 </body>
+
 </html>
