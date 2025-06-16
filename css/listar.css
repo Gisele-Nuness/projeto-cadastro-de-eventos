@@ -100,8 +100,8 @@ h2 {
   transition: background-color 0.3s ease;
 }
 
-.btn-excluir{
-    align-self: flex-start;
+.btn-delete{
+  align-self: flex-start;
   padding: 6px 12px;
   background-color: #FF0000;
   color: white;
