@@ -46,7 +46,14 @@ $eventos = $stmt->fetchAll(PDO::FETCH_ASSOC);
               <!-- Link para editar o evento passando o id como parâmetro -->
               <div class="botoes">
                  <a href="atualizar_evento.php?id=<?= $evento['idEvento'] ?>" class="btn-edit">Editar</a>
-                 <a href="excluir_evento.php?id=<?= $evento['idEvento'] ?>" class="btn-edit btn-excluir">Excluir</a>
+
+                <form method="GET" action="excluir_evento.php" class="form-excluir">
+                  <!-- Campo oculto contendo o id do evento para exclusão -->
+                  <input type="hidden" name="id" value="<?= $evento['idEvento'] ?>" />
+                  
+                  <!-- Botão para enviar o formulário e excluir o evento -->
+                  <button type="submit" class="btn-delete">Excluir</button>
+                </form>
 
               </div>
 
@@ -58,5 +65,10 @@ $eventos = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <p>Você ainda não cadastrou nenhum evento.</p> <!-- Mensagem para usuário -->
     <?php endif; ?>
   </div>
+
+  <script src="js/excluir.js"></script>
+  
+  <!-- Inclusão da biblioteca SweetAlert2 para alertas bonitos -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
