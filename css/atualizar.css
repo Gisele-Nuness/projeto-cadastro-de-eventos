@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  width: 400px;
   margin: 50px auto;
   padding: 30px;
   border-radius: 8px;
@@ -22,7 +22,6 @@ body {
   border-radius: 8px;
   border: 2px solid #A020F0;
   box-shadow: 0 0 5px #cc8af5, 0 0 10px #cc8af5, 0 0 20px #cc8af5;
-  width: calc((100% / 5) - 16px); /* 5 cards por linha com gap */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -79,11 +78,12 @@ textarea {
 
 .button{
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
   flex-direction: row;
 }
 
 .btn-salvar {
+  display: flex;
   background-color: #A020F0;
   color: #ffffff;
   border: none;
@@ -93,6 +93,9 @@ textarea {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  width: 100px;
+  height: 40px;
+  justify-content: center;
 }
 
 .btn-salvar:hover {
@@ -100,6 +103,7 @@ textarea {
 }
 
 .btn-voltar {
+  display: flex;
   background-color: #A020F0;
   color: #ffffff;
   border: none;
@@ -109,6 +113,9 @@ textarea {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  width: 190px;
+  height: 20px;
+  justify-content: center;
 }
 
 .btn-voltar:hover {

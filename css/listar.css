@@ -4,22 +4,13 @@
 
 
 body {
-<<<<<<< HEAD
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  scroll-behavior: smooth;
-  background-color: rgb(253, 223, 240);
-=======
   font-family: Arial, sans-serif;
   background-image: url(../img/estrela-rosa.png);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
->>>>>>> 1c76fc8030adf7a17f1cfcb95284e2f1588398bf
   margin: 0;
-  padding: 20px;
-  
+  padding: 20px;  
 
 }
 

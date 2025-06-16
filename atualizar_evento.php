@@ -154,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit" class="btn-salvar"><i class="fas fa-save" style="margin-right: 8px;"></i> Salvar</button>
 
         <!-- Link para voltar à dashboard -->
-        <a href="dashboard.html" class="btn-salvar" style="text-decoration: none;">
+        <a href="dashboard.html" class="btn-voltar" style="text-decoration: none;">
           <i class="bi bi-arrow-left-circle" style="margin-right: 8px;"></i> Voltar à Dashboard
 
           
