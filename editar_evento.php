@@ -43,9 +43,21 @@ $eventos = $stmt->fetchAll(PDO::FETCH_ASSOC);
               <h3><?= htmlspecialchars($evento['titulo']) ?></h3> <!-- Título do evento -->
               <p><strong>Data:</strong> <?= date('d/m/Y', strtotime($evento['data_evento'])) ?></p> <!-- Data do evento formatada -->
               <p><?= htmlspecialchars($evento['descricao']) ?></p> <!-- Descrição do evento -->
+              <!-- Link para editar o evento passando o id como parâmetro -->
+              <div class="botoes">
+                 <a href="atualizar_evento.php?id=<?= $evento['idEvento'] ?>" class="btn-edit">Editar</a>
+
+                <form method="GET" action="excluir_evento.php" class="form-excluir">
+                  <!-- Campo oculto contendo o id do evento para exclusão -->
+                  <input type="hidden" name="id" value="<?= $evento['idEvento'] ?>" />
+                  
+                  <!-- Botão para enviar o formulário e excluir o evento -->
+                  <button type="submit" class="btn-delete">Excluir</button>
+                </form>
+
+              </div>
 
             </div>
-
           </div>
         <?php endforeach; ?> <!-- Fim do loop -->
       </div>

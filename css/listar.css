@@ -36,8 +36,9 @@ h2 {
 
 .cards-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px; /* espaço entre os cards */
+  gap: 30px; /* espaço entre os cards */
   justify-content: flex-start;
   
 }
