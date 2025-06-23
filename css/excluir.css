@@ -3,13 +3,15 @@
 /* Define o estilo base do corpo da página */
 body {
   font-family: Arial, sans-serif; /* Fonte principal */
-  background-color: #f9f9f9;       /* Cor de fundo clara */
+  background-image: url(../img/bg-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;       /* Cor de fundo clara */
   margin: 0;                      /* Remove margens padrão */
   padding: 40px;                  /* Espaçamento interno */
   display: flex;                  /* Usa flexbox para alinhamento */
   justify-content: center;        /* Centraliza horizontalmente */
   align-items: center;            /* Centraliza verticalmente */
-  height: 100vh;                  /* Altura total da janela de visualização */
+  height: 100vh;                 /* Altura total da janela de visualização */
 }
 
 /* Container central que segura a mensagem */
@@ -31,12 +33,12 @@ body {
 
 /* Estilo específico para mensagens de sucesso */
 .mensagem.sucesso {
-  color: #007bff;                 /* Cor azul (ex: confirmação) */
+  color: #FF1493;                 
 }
 
 /* Estilo específico para mensagens de erro */
 .mensagem.erro {
-  color: #dc3545;                 /* Cor vermelha (ex: erro ou alerta) */
+  color: #FF0000;                 /* Cor vermelha (ex: erro ou alerta) */
 }
 
 /* Parágrafo dentro da mensagem com estilo secundário */

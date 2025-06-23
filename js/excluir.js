@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
         text: "Tem certeza que deseja excluir este evento? Esta ação não pode ser desfeita.",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#dc3545',
-        cancelButtonColor: '#3085d6',
+        confirmButtonColor: '#FF0000',
+        cancelButtonColor: '#FF1493',
         confirmButtonText: 'Sim, excluir!',
         cancelButtonText: 'Cancelar'
       }).then((result) => {

@@ -11,6 +11,7 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 20px;  
+  overflow-y:scroll;  
 
 }
 
@@ -123,6 +124,10 @@ h2 {
 
 .btn-edit:hover {
   background-color: #e705a7;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
 }
 
 /* Responsividade simples */
